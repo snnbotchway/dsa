@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "typechain": "typechain --target ethers-v6 --out-dir typechain/ './abis/*.json'"
+  },
+  "dependencies": {
+    "@moralisweb3/common-evm-utils": "^2.26.1",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@types/heap": "^0.2.34",
+    "axios": "^1.7.2",
+    "csv-parse": "^5.5.6",
+    "csv-parser": "^3.0.0",
+    "ethers": "^6.12.1",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "heap": "^0.2.7",
+    "mongodb": "^6.6.2",
+    "moralis": "^2.26.1",
+    "nodemon": "^3.1.0",
+    "normalize-email": "^1.1.1",
+    "p-queue-ts": "^1.2.0",
+    "priority-queue-typescript": "^1.0.1",
+    "redis": "^4.6.14",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typechain": "^8.3.2",
+    "typescript": "^5.4.5",
+    "util": "^0.12.5"
+  }
+}
