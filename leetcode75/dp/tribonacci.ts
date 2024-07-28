@@ -23,11 +23,19 @@ function tribonacci(n: number): number {
   bottomUp[1] = 1;
   bottomUp[2] = 1;
 
+  if (bottomUp[n] !== undefined) return bottomUp[n];
+
   for (let i = 3; i <= n; i++) {
-    bottomUp[i] = tribonacci(i - 1) + tribonacci(i - 2) + tribonacci(i - 3);
+    bottomUp[i] = bottomUp[i - 1] + bottomUp[i - 2] + bottomUp[i - 3];
   }
 
   return bottomUp[n];
 }
 
-console.log(tribonacci(0));
+// console.log(tribonacci(0));
+// console.log(tribonacci(1));
+// console.log(tribonacci(2));
+// console.log(tribonacci(3));
+// console.log(tribonacci(4));
+// console.log(tribonacci(5));
+console.log(tribonacci(50));
